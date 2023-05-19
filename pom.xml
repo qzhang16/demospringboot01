@@ -60,6 +60,17 @@
 				</configuration>
 				<executions>
 					<execution>
+						<id>build-info-goal</id>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+						<configuration>
+							<additionalProperties>
+								<java.version>${java.version}</java.version>
+							</additionalProperties>
+						</configuration>
+					</execution>
+					<execution>
 						<id>pre-it</id>
 						<goals>
 							<goal>start</goal>
