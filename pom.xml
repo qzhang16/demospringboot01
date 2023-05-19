@@ -70,19 +70,16 @@
 							</additionalProperties>
 						</configuration>
 					</execution>
-					<execution>
-						<id>pre-it</id>
-						<goals>
-							<goal>start</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>post-it</id>
-						<goals>
-							<goal>stop</goal>
-						</goals>
-					</execution>
+
 				</executions>
+			</plugin>
+			<plugin>
+				<!-- https://mvnrepository.com/artifact/pl.project13.maven/git-commit-id-plugin -->
+
+					<groupId>pl.project13.maven</groupId>
+					<artifactId>git-commit-id-plugin</artifactId>
+					<version>4.9.10</version>
+
 			</plugin>
 		</plugins>
 	</build>
